@@ -33,7 +33,7 @@ Hardware setup
 - Power on your DragonBoard 410c with 96Boards compliant power supply
 - To make sure the microphone and speakers are connected successfully, go to Application Menu -> Sound & Video -> PulseAudio Volume Control and check the input and output device, set as "WizeIoT AiVA-96 DevKit (UAC1.0) Analog Stereo". 
 
-    ![AiVA-96 and DB410c](../../wiki/assets/aiva_db410c.jpg)
+    ![AiVA-96 and DB410c](https://github.com/wizeiot/aiva-96-google-assistant/wiki/assets/aiva_db410c.jpg)
 
 Google Assistant SDK installation and DragonBoard 410c audio setup
 ---
@@ -78,11 +78,11 @@ Brief instructions and additional notes are below:
     ```
     $ bash device_regist.sh
     ```
-    Be ready for [Project ID](../../wiki/Project-ID) and [Device Model ID](../../wiki/Model-ID) before run registration script.
+    Be ready for [Project ID](https://github.com/wizeiot/aiva-96-google-assistant/wiki/Project-ID) and [Device Model ID](https://github.com/wizeiot/aiva-96-google-assistant/wiki/Model-ID) before run registration script.
    
     When "Please visit this URL to authorize this application: https://accounts.google.com/..." comes up on your terminal, click with your mouse right button and choose 'Open Link' for open from your browser. Than sign-in to your Google account and get authorization code. When code appears, copy (Ctrl+C) from browser and paste (Ctrl+Shift+V) into terminal.
    
-    When script asks [Project ID](../../wiki/Project-ID) and [Device Model ID](../../wiki/Model-ID), type it to continue. When registration finished, 'google_assitant.sh' file will be created.  
+    When script asks **Project ID** and **Device Model ID**, type it to continue. When registration finished, 'google_assitant.sh' file will be created.  
 
 6. Run Google Assistant
     ```
@@ -101,6 +101,6 @@ Brief instructions and additional notes are below:
 
 Enjoy your Google Assistant and don't forget to visit https://www.iotoi.io community for find out more projects. 
 
-See [Project ID](../../wiki/Project-ID)  
-See [Device Model ID](../../wiki/Model-ID)
+See [Project ID](https://github.com/wizeiot/aiva-96-google-assistant/wiki/Project-ID)  
+See [Device Model ID](https://github.com/wizeiot/aiva-96-google-assistant/wiki/Model-ID)
 
