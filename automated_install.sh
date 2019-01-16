@@ -30,14 +30,17 @@ Python_Version=`python -c 'import sys; version=sys.version_info[:3]; print("{0}.
 echo "Python version: $Python_Version "
 
 if [ "$Python_Version" = "2.7" ]; then
-  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/1.15.0/grpcio-1.15.0-cp27-cp27mu-linux_aarch64.whl
-  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/1.15.0/grpcio_tools-1.15.0-cp27-cp27mu-linux_aarch64.whl
+  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/v1.15.0/grpcio-1.15.0-cp27-cp27mu-linux_aarch64.whl
+  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/v1.15.0/grpcio_tools-1.15.0-cp27-cp27mu-linux_aarch64.whl
 elif [ "$Python_Version" = "3.5" ]; then
-  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/1.15.0/grpcio-1.15.0-cp35-cp35m-linux_aarch64.whl
-  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/1.15.0/grpcio_tools-1.15.0-cp35-cp35m-linux_aarch64.whl
+  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/v1.15.0/grpcio-1.15.0-cp35-cp35m-linux_aarch64.whl
+  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/v1.15.0/grpcio_tools-1.15.0-cp35-cp35m-linux_aarch64.whl
 elif [ "$Python_Version" = "3.6" ]; then
-  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/1.15.0/grpcio-1.15.0-cp36-cp36m-linux_aarch64.whl
-  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/1.15.0/grpcio_tools-1.15.0-cp36-cp36m-linux_aarch64.whl
+  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/v1.15.0/grpcio-1.15.0-cp36-cp36m-linux_aarch64.whl
+  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/v1.15.0/grpcio_tools-1.15.0-cp36-cp36m-linux_aarch64.whl
+elif [ "$Python_Version" = "3.7" ]; then
+  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/v1.18.0/grpcio-1.18.0-cp37-cp37m-linux_aarch64.whl
+  python -m pip install https://github.com/wizeiot/grpcio-build/raw/master/v1.18.0/grpcio_tools-1.18.0-cp37-cp37m-linux_aarch64.whl
 else
   echo " Wheels not found, new build needs up to 2 hours. Please wait!" 
   date "+ Started = %H:%M:%S"
